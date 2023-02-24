@@ -21,6 +21,7 @@ public class Test8 {
 	  return "YES";
 	}
 	
+	//스트링->알파벳만포함되는 스트
 	public String getAlphabetStr(String str) {
 		StringBuffer alphabetStr = new StringBuffer();
 		
