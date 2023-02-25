@@ -105,7 +105,7 @@
 > #출력
 > efW#%EA%*
 
-## 6.중복된 문자 제거 [Test6]((https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test6.java)
+## 6.중복된 문자 제거 [Test6](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test6.java)
 - 첫번째 줄 입력 : 문자열 
 - 출력 : 중복이 제거된 문자열 
 
