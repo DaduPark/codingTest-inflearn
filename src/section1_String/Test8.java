@@ -8,12 +8,15 @@ public class Test8 {
 	public String solution(String str) {
 	   
 	  String alphabetStr = getAlphabetStr(str);
+	  
+	  alphabetStr = alphabetStr.toUpperCase();
+	  
 	  int arrayLastNum = alphabetStr.length()-1;
 	  
 	  char[] strArray = alphabetStr.toCharArray();
 	  
 	  for(char strOne : strArray) {
-	   if(Character.toUpperCase(strOne) != Character.toUpperCase(strArray[arrayLastNum--])) {
+	   if(strOne != strArray[arrayLastNum--]) {
 	    return "NO";
 	   }
 	  }
@@ -21,7 +24,7 @@ public class Test8 {
 	  return "YES";
 	}
 	
-	//스트링->알파벳만포함되는 스트
+	//스트링->알파벳만포함되는 스트링 
 	public String getAlphabetStr(String str) {
 		StringBuffer alphabetStr = new StringBuffer();
 		
