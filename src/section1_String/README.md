@@ -17,7 +17,7 @@
     - 응답 : boolean
 
 - String getAlphabetStr(String str) [Test8]
-    - 기능 : 문자열을 알파벳만 포함된 문자열로 반환 (내부에서 isAlphabet호)
+    - 기능 : 문자열을 알파벳만 포함된 문자열로 반환 (내부에서 isAlphabet호출)
     - 요청 : 문자열 String
     - 응답 : 알파벳문자열 STringß
 
