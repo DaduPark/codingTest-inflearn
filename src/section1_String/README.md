@@ -1,22 +1,22 @@
 # String(문자열)
 ---
 ## 만든 메소드
-- boolean isLowerCase(char c) [Test2]
+- boolean isLowerCase(char c) [Test2](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test2.java)
     - 기능 : 소문자 확인
     - 요청 : char
     - 응답 : boolean
  
-- String getReverseString(String str) [Test4]
+- String getReverseString(String str) [Test4](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test4.java)
     - 기능 : 단어 뒤집어줌
     - 요청 : String
     - 응답 : String
     
-- boolean isAlphabet(char c) [Test5]
+- boolean isAlphabet(char c) [Test5]https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test5.java
     - 기능 : 알파벳여부 확인 
     - 요청 : char
     - 응답 : boolean
 
-- String getAlphabetStr(String str) [Test8]
+- String getAlphabetStr(String str) [Test8]https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test8.java
     - 기능 : 문자열을 알파벳만 포함된 문자열로 반환 (내부에서 isAlphabet호출)
     - 요청 : 문자열 String
     - 응답 : 알파벳문자열 STringß
