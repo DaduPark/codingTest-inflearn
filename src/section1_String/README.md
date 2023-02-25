@@ -11,12 +11,12 @@
     - 요청 : String
     - 응답 : String
     
-- boolean isAlphabet(char c) [Test5]https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test5.java
+- boolean isAlphabet(char c) [Test5](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test5.java)
     - 기능 : 알파벳여부 확인 
     - 요청 : char
     - 응답 : boolean
 
-- String getAlphabetStr(String str) [Test8]https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test8.java
+- String getAlphabetStr(String str) [Test8](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test8.java)
     - 기능 : 문자열을 알파벳만 포함된 문자열로 반환 (내부에서 isAlphabet호출)
     - 요청 : 문자열 String
     - 응답 : 알파벳문자열 STringß
@@ -27,7 +27,7 @@
    - ArrayLis보다 HashSet를 통해 사용해야 성능이 더 좋다.
 --- 
 
-## 1.문자 찾기
+## 1.문자 찾기[Test1](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test1.java)
 - 첫번째 줄 입력 : 검색할 문자열
 - 두번째 줄 입력 : 찾고자 하는 문자
 - 출력 : 찾고자 하는 문자의 갯수
@@ -44,7 +44,7 @@
 > #출력  
 > 2
 
-## 2.대소문자 변환
+## 2.대소문자 변환[Test2](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test2.java)
 - 첫번째 줄 입력 : 대소문자가 같이 존재하는 문자열
 - 출력 : 대문자는 소문자로, 소문자는 대문자로 변환된 문자열 출력
 
@@ -59,7 +59,7 @@
 > #출력
 > aLGOrITHm
 
-## 3.가장 긴 문자 추출 
+## 3.가장 긴 문자 추출 [Test3](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test3.java)
 - 첫번째 줄 입력 : 공백이 존재하는 대소문자 문자열 
 - 출력 : 가장 긴 문자열
 
@@ -74,7 +74,7 @@
 > #출력
 > banana
 
-## 4. 단어 뒤집기 
+## 4. 단어 뒤집기 [Test4](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test4.java)
 - 첫번째 줄 입력 : 입력될 단어의 개수(자연수 N) 3<=N<=20
 - 두번 줄 부터 입력 : 알파벳 단어 
 - 출력 : 입력된 단어 순서대로 뒤집은 단어
@@ -89,7 +89,7 @@
 > #출력
 > banana
 
-## 5. 특정문자만 단어뒤집기(알파벳만 순서 뒤집기)
+## 5. 특정문자만 단어뒤집기(알파벳만 순서 뒤집기) [Test5](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test5.java)
 - 첫번째 줄 입력 : 특수문자와 알파벳이 섞인 문자열 
 - 출력 : 알파벳만 뒤집힌 문자열 
 
@@ -105,7 +105,7 @@
 > #출력
 > efW#%EA%*
 
-## 6.중복된 문자 제거 
+## 6.중복된 문자 제거 [Test6]((https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test6.java)
 - 첫번째 줄 입력 : 문자열 
 - 출력 : 중복이 제거된 문자열 
 
@@ -120,7 +120,7 @@
 > #출력
 > DOg
 
-## 7.회문 문자열(앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열) 확인
+## 7.회문 문자열(앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열) 확인 [Test7](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test7.java)
 - 첫번째 줄 입력 : 문자열 
 - 출력 : 회문 문자열일때 YES , 아닐때 NO
 - 조건 : 대소문자 구분 없음
@@ -138,7 +138,7 @@
 > #출력
 > YES
 
-## 8. 팰린드롬(앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열) 
+## 8. 팰린드롬(앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열) [Test8](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test8.java)
 - 첫번째 줄 입력 : 문자열 
 - 출력 : 팰린드롬 문자열일때 YES , 아닐때 NO
 - 조건 : 대소문자 구분 없으며 알파벳 이외의 문자 무시.
