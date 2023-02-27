@@ -11,10 +11,25 @@
     - 기능 : 단어 뒤집어줌
     - 요청 : String
     - 응답 : String
-    - 대체 : StringBuffer sb = new StringBuffer(str);
+    - 대체 : 
+    ```
+    StringBuffer sb = new StringBuffer(str);
+    String reversedStr = sb.reverse().toString();
+    ```
     
-             String reversedStr = sb.reverse().toString();
-    
+    ```
+     char[] c = word.toCharArray();
+            int frontN  = 0;
+            int backN   = word.length() -1;
+
+            while ( frontN < backN ){
+                char temp = c[frontN];
+                c[frontN] = c[backN];
+                c[backN] = temp;
+                frontN++;
+                backN--;
+            }
+      ```
 - boolean isAlphabet(char c) [Test5](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test5.java)
     - 기능 : 알파벳여부 확인 
     - 요청 : char
