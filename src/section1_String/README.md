@@ -31,6 +31,7 @@
 ## 지식
  - contains 함수 사용 시 
    - ArrayLis보다 HashSet를 통해 사용해야 성능이 더 좋다.
+ - str.indexOf(char) : 가장먼저 char값이 나오는 순서 return
 --- 
 
 ## 1.문자 찾기[Test1](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test1.java)
