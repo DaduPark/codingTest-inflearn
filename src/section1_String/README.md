@@ -12,6 +12,7 @@
     - 요청 : String
     - 응답 : String
     - 대체 : StringBuffer sb = new StringBuffer(str);
+    
              String reversedStr = sb.reverse().toString();
     
 - boolean isAlphabet(char c) [Test5](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test5.java)
