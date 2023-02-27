@@ -19,6 +19,7 @@
     - 기능 : 알파벳여부 확인 
     - 요청 : char
     - 응답 : boolean
+    - 대체 : Character.isAlphabetic();
 
 - String getAlphabetStr(String str) [Test8](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test8.java)
     - 기능 : 문자열을 알파벳만 포함된 문자열로 반환 (내부에서 isAlphabet호출)
