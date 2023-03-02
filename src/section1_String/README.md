@@ -157,3 +157,19 @@
 > #출력
 > YES
 
+
+## 9. 숫자만 추출 [Test9](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test9.java)
+- 첫번째 줄 입력 : 문자열 
+- 출력 : 자연수 
+
+- 풀이
+  - 정규식을 사용하여 숫자만 추출 
+  - Strin을 int로 변환 
+  
+
+> #입력  
+> asdf012asdf3
+>
+> #출력
+> 123
+
