@@ -250,7 +250,7 @@
 > #출력2
 > A2TES3E2
 
-##12. 암호  [Test12](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test12.java)
+## 12. 암호  [Test12](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section1_String/Test12.java)
 - 설명 : 문자열을 7개씩 끊어 문자열을 #->1, *->0로 변환하여 2진수를 10진수로 변환하여 문자로 치환하여 암호된 문자열을 복호화해준다.
 - 첫번째 줄 입력 :문자열의 개수와 #*으로 이루어진 문자열 
 - 출력 : 복호화된 문자열 
