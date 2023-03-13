@@ -3,7 +3,7 @@ package section2_Array;
 import java.util.Scanner;
 
 public class Test5 {
-//12
+
 	public int solution(int n) {
 		
 		int result = 0;
@@ -18,7 +18,7 @@ public class Test5 {
 	}
 	
 	public boolean isDecimal(int num) {
-		//1과 자기자신을 제외하고 나눠봄 
+		//약수들의 곱으로 봤을때 루트를 씌운 값이 중간까지만 구하면됨.
 		for(int i = 2 ; i <= Math.sqrt(num) ; i++) {
 			if(num%i==0) {
 				return false;
