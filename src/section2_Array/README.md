@@ -103,8 +103,8 @@
   즉 약수들의 곱으로 봤을때 루트를 씌운 값이 중간값이 된다.  
   이 원리는 이용하여 2에서부터 √N의 값까지 검색을한다며 이후의 값은 확인할 필요가 없게 된고 시간복잡도는 O(√N)이 된다.  
   코드의 가독성을 위해 루트함수는 사용하지 않고 i의 제곱값으로 확인을한다.  
-  [출처:https://myjamong.tistory.com/139](https://myjamong.tistory.com/139)
   ```
+  [출처:https://myjamong.tistory.com/139](https://myjamong.tistory.com/139)
 
 > #입력  
 > 9
