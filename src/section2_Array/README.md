@@ -1,4 +1,4 @@
-# Array(1,2차원배)
+# Array(1,2차원배열)
 ---
 ## 만든 메소드
 - char getGameResult(int A, int B) [Test3](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section2_Array/Test3.java)
@@ -12,7 +12,7 @@
 
 
 ## 지식
- -
+ - 
 --- 
 
 ## 1. 큰 수 출력하기[Test1](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section2_Array/Test1.java)
@@ -112,4 +112,57 @@
 > #출력  
 > 1 1 2 3 5 8 13 21 34
 
+
+## 6. 뒤집은 소수  [Test6](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section2_Array/Test6.java)
+- 첫 번째 줄 입력 : 입력되는 정수 개수 
+- 두 번째 줄 입력 : 숫자나열
+- 출력 : 나열된 숫자 중 뒤집은 값이 소수인 값들 정렬(뒤집은 값으로 표시)
+
+
+- 풀이 
+  - 값을 StringBuffer에 담아 reverse를 통해 뒤집은 후 
+  - 소수값일 경우(isDecimal 메소드 사용) 값 저장
+> #입력  
+> 9
+>4 22 42 20 250 370 200 30 100
+
+> #출력  
+> 4 2 73 2 3
+
+## 7.  점수계산 [Test7](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section2_Array/Test7.java)
+- 첫 번째 줄 입력 : 문제 개수
+- 두 번째 줄 입력 : 0,1로 나와있는 숫자 나열(오답:0, 정답:1)
+- 출력 : 점수나열(앞에 문제가 정답일경우 +1하여 채점)
+
+
+- 풀이 
+  - 이전문제가 정답일경우 +1 아닐 경우 0으로 초기화하여
+  - 값을 나열  
+  
+> #입력  
+> 10
+>1 0 1 1 1 0 0 1 1 0
+
+
+> #출력  
+> 10
+
+## 8. 등수구하기 [Test8](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section2_Array/Test8.java)
+- 첫 번째 줄 입력 : 문제 개수
+- 두 번째 줄 입력 : 점수 나열
+- 출력 : 등수 나열(동일한 점수일 경우 동일 등수이며 다음 점수에는 순서에 맞게 등수 측정 ex-> 99 99 88 : 1 1 2)
+
+
+- 풀이 
+  - 점수를 정렬 시킨 후 for문을 통해 돌면서
+  - 해당 값과 등수를 key value형태로 담기(key:값, value:등수)
+  - 이때, 등수 변수를 만들어 0이 아니거나 이전점수와 같을 경우 등수변수는 이전과 동일하게 하고 / 만약 이전점수와 다를경우 for문의 순서값을 등수변수에 넣어준다(정렬된 값들을 순서에 맞게 등수를 매겨주기위해서)
+  - 처음에 받아온 점수배열을 반복문으로 돌려  Map에 담은 데이터를 통해 해당 값에 맞는 등수를 저장해준다.
+> #입력  
+> 10
+>1 0 1 1 1 0 0 1 1 0
+
+
+> #출력  
+> 10
 
