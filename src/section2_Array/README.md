@@ -12,7 +12,12 @@
 
 
 ## 지식
- - 
+ - 배열 역순 정렬(int배열>Integer배열)
+ ```java
+ int array[] = {값들};
+ Integer array2[] = Arrays.stream(array).boxed().toArray(Integer[]::new); //int배열>Integer배열
+ Arrays.sort(array2,Collections.reverseOrder()); //배열 역순 정렬
+ ```
 --- 
 
 ## 1. 큰 수 출력하기[Test1](https://github.com/DaduPark/codingTest-inflearn/blob/master/src/section2_Array/Test1.java)
