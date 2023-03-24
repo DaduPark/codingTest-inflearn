@@ -8,21 +8,12 @@ public class Test10 {
 		
 		int result =0;
 		
-		int test[][] = new int[n][n];
-		
 		for(int i=0 ;i <n ; i++) {
 			for(int j=0 ;j <n; j++) {
 				if(isPeak(i,j,array)) {
 					result++;
-					test[i][j]=1;
 				}
 			}
-		}
-		for(int i=0 ;i <n ; i++) {
-			for(int j=0 ;j <n; j++) {
-				System.out.print(test[i][j]+" ");
-			}
-			System.out.println();
 		}
 		
 		return result;
@@ -34,7 +25,7 @@ public class Test10 {
 		int up = (i-1)<0 ? 0 : array[i-1][j];
 		int down = (i+1)>array.length-1 ? 0 : array[i+1][j];
 		int left = (j-1)<0 ? 0 : array[i][j-1];
-		int right = (j+1)>array.length-1 ? 0 : array[j][j+1];
+		int right = (j+1)>array.length-1 ? 0 : array[i][j+1];
 		
 		if(!(array[i][j]>up && array[i][j]>down && array[i][j]>left && array[i][j]>right)) {
 			return false;
