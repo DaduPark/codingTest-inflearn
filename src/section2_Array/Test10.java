@@ -1,45 +1,46 @@
 package section2_Array;
 
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Test10 {
 
 	public int solution(int n, int array[][]) {
 		
-		int diagonal1 = 0;
-		int diagonal2 = 0;
+		int result =0;
 		
-		int verticalMax = 0; //세로
-		int horizontalMax =0;
+		int test[][] = new int[n][n];
+		
 		for(int i=0 ;i <n ; i++) {
-			diagonal1 = array[i][i]+diagonal1;
-			diagonal2 = array[n-1-i][n-1-i]+diagonal2;
-			int vertical = 0;
-			int horizontal = 0;
 			for(int j=0 ;j <n; j++) {
-				vertical = array[i][j]+vertical;
-				horizontal = array[j][i]+horizontal;
+				if(isPeak(i,j,array)) {
+					result++;
+					test[i][j]=1;
+				}
 			}
-			if(vertical>verticalMax) {
-				verticalMax = vertical;
+		}
+		for(int i=0 ;i <n ; i++) {
+			for(int j=0 ;j <n; j++) {
+				System.out.print(test[i][j]+" ");
 			}
-			
-			if(horizontal>horizontalMax) {
-				horizontalMax = horizontal;
-			}
-			
+			System.out.println();
 		}
 		
-		LinkedList<Integer> result = new LinkedList<Integer>();
-		result.add(diagonal1);
-		result.add(diagonal2);
-		result.add(verticalMax);
-		result.add(horizontalMax);
+		return result;
+	}
+	
+	private boolean isPeak(int i, int j, int array[][]) {
+		// i,j와 i-1,j/ i+1,j/ i,j-1/ i,j+1 (상하좌우_i-1,j-1>0 / i+1,j+1<size-1 일때만 비교)
 		
+		int up = (i-1)<0 ? 0 : array[i-1][j];
+		int down = (i+1)>array.length-1 ? 0 : array[i+1][j];
+		int left = (j-1)<0 ? 0 : array[i][j-1];
+		int right = (j+1)>array.length-1 ? 0 : array[j][j+1];
 		
-		return Collections.max(result);
+		if(!(array[i][j]>up && array[i][j]>down && array[i][j]>left && array[i][j]>right)) {
+			return false;
+		}
+		
+		return true;
 	}
 	
 	
