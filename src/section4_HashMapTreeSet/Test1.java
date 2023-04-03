@@ -1,4 +1,4 @@
-package section4;
+package section4_HashMapTreeSet;
 
 import java.util.HashMap;
 import java.util.Scanner;
