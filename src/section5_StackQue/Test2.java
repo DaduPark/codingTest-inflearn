@@ -3,7 +3,7 @@ package section5_StackQue;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Test1 {
+public class Test2 {
 	public String  solution(String str ) {
 		Stack<Character> stack = new Stack<>();
 		
@@ -46,7 +46,7 @@ public class Test1 {
 	
 	
 	public static void main(String[] args) {
-		Test1 main = new Test1();
+		Test2 main = new Test2();
 		
 		Scanner in=new Scanner(System.in);
 		
