@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
+//공통원소 구하기
 public class Test2 {
 	public List<Integer>  solution(int array1[],int array2[] ) {
 		
