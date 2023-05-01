@@ -18,7 +18,7 @@ public class Test3 {
 		
 		int preIndex = 0;
 		int nextIndex = k;
-		for(int i = 1; i<array.length-k ; i++) {
+		for(int i = 1; i<array.length-k+1 ; i++) {
 			sum = sum-array[preIndex]+array[nextIndex];
 			preIndex += 1;
 			nextIndex += 1;
