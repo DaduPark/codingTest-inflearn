@@ -12,39 +12,17 @@ public class Test4 {
 		
 		int result = 0 ;
 		int sum=0;
-		int nextIndex=0;
-		while(sum<m) {
-			sum += array[nextIndex];
-			nextIndex++;
-		}
+		int left=0;
 		
-		if(sum==m) {
-			result++;
-		}
-		
-		int preIndex = 0;
-		
-		for(int i = nextIndex; i<array.length ; i++) {
-			sum = sum-array[preIndex];
-			preIndex++;
-			if(sum==m) {
-				result++;
-			}
-			if(sum>=m) {
-				continue;
-			}
-			
-			
-			while(sum<m ) {
-				sum += array[nextIndex];
-				nextIndex++;
-			}
+		for(int right = 0; right<array.length ; right++) {
+			sum = sum+array[right];
 			if(sum==m) {
 				result++;
 			}
 			
-			if(nextIndex>=array.length) {
-				break;
+			while(sum>=m) {
+				sum=sum-array[left++];
+				if(sum==m) result++;
 			}
 			
 		}
